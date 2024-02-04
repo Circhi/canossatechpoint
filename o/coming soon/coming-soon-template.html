@@ -1,1 +1,143 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+</head>
+<body>
+  <style>
+    
+  </style>
+  <header>
+    <!-- Intro settings -->
+    <style>
+     
+      /* Default height for small devices */
+      #intro {
+        height: 600px;
+        /* Margin to fix overlapping fixed navbar */
+        margin-top: 58px;
+      }
+      @media (max-width: 991px) {
+              #intro {
+              /* Margin to fix overlapping fixed navbar */
+              margin-top: 45px;
+      	}
+      }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+      
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="">Home</a>
+            </li>
+            <li class="nav-item">
+       
+            </li>
+
+          </ul>
+
+          <ul class="navbar-nav d-flex flex-row">
+       
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Background image -->
+    <div id="intro" class="p-5 text-center bg-image shadow-1-strong"
+      style="background-image: url(img/420185634_411764724528715_3432154419160027041_n.jpg);">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white px-4" data-mdb-theme="dark">
+            <h1 class="mb-3">Coming Soon!</h1>
+
+            <!-- Time Counter -->
+            <h3 id="countdown" class="border border-light my-4 p-4"></h3>
+
+            <p>SITO IN COSTRUZIONE, POCHI GIORNI E LO SHOP SARA' APERTO!</p>
+
+            <p>Potete sempre contattarmi per riparazioni al 3464968773</p>
+
+   
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  </main>
+  <!--Main layout-->
+
+  
+
+    <!-- Time Counter -->
+    <script type="text/javascript">
+    function countdown(dataFine) {
+      // Ottieni la data corrente
+      var dataCorrente = new Date();
+
+      // Calcola la differenza tra le due date
+      var differenza = dataFine - dataCorrente;
+
+      // Converti la differenza in giorni, ore e minuti
+      var giorni = Math.floor(differenza / (1000 * 60 * 60 * 24));
+      var ore = Math.floor((differenza % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minuti = Math.floor((differenza % (1000 * 60 * 60)) / (1000 * 60));
+      var secondi = Math.floor((differenza % (1000 * 60)) / 1000);
+
+      // Ritorna i risultati
+      return { giorni: giorni, ore: ore, minuti: minuti, secondi: secondi};
+    }
+
+    // Imposta la data di fine del conto alla rovescia
+    var dataFine = new Date("2024-02-20");
+
+    // Aggiorna l'interfaccia utente con i risultati del conto alla rovescia
+    function updateCountdown() {
+      // Ottieni i risultati del conto alla rovescia
+      var risultati = countdown(dataFine);
+
+      // Aggiorna l'interfaccia utente
+      document.getElementById("countdown").innerHTML =
+         + risultati.giorni + "  Giorni, " + risultati.ore + " Ore, " + risultati.minuti + " Minuti e " + risultati.secondi + " Secondi al lancio";
+    }
+
+    // Avvia il conto alla rovescia all'avvio della pagina
+    window.onload = function() {
+      // Aggiorna l'interfaccia utente con i risultati del conto alla rovescia
+      updateCountdown();
+
+      // Ripeti l'aggiornamento ogni secondo
+      setInterval(updateCountdown, 1000);
+    };
+      setInterval(updateCountdown, 1000);
+    ;
+    </script>
+
+
+</body>
+</html>
