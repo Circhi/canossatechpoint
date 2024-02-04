@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+
+/*TAGS*/
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:rgb(35, 35, 85)
+}
+
+span{
+    font-size: .9rem;
+    color: #757373
+}
+
+
+
+h6{
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49)
+}
+
+
+
+
+
+/*NAVIGATION*/
+
+
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    align-items: center;
+    box-shadow:  2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+nav img {
+    width: 100px;
+    cursor: pointer;
+}
+
+
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+nav .navigation ul li{
+    list-style: none;
+  margin-left: 30px;
+}
+
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+    transition:  0.3s ease;
+}
+
+
+
+
+nav .navigation ul li a:hover{
+    color: red;
+
+}
+
+
+
+
+
+
+/*HOME*/
+
+
+#home{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(25, 22, 199, 0.7)),url(img/1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+#home h2{
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p{
+    width: 50%;
+    color: white;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+
+#home .btn{
+    margin-top: 30px;
+     
+}
+
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 40px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home a.blue{
+    color: #fff;
+    background-color: rgb(21, 21, 100) ;
+    transition: 0.3s ease;
+}
+
+#home a.blue:hover{
+    color: rgb(21, 21, 100);
+    background-color:#fff;
+}
+
+
+
+
+
+
+
+
+
+#home a.yellow{
+    color: #fff;
+    background-color: #FDC93B ;
+    transition: 0.3s ease;
+}
+
+#home a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background-color:#fff;
+}
+
+
+
+
+
+/*FEATURES*/
+
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+
+#features .fea-box{
+    background: #F9F9FF;
+    text-align: center;
+}
+
+
+#features .fea-box  li{
+    list-style: none;
+
+}
+
+#features .fea-box i{
+    font-size: 2.5rem;
+    color: rgb(44, 44, 80);
+}
+
+#features .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+    padding: 13 0 7px 0;
+    
+}
+
+#features .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70, 70, 87);
+    
+}
+
+
+
+
+#chi{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------CONTACT---------------------*/ 
+
+
+#contact{
+    padding: 8vw ;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#contact .getin{
+    width: 350px;
+}
+
+
+#contact .getin h2{
+color: #2c234d ;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: .8;
+    margin-bottom: 16px ;
+}
+
+
+#contact .getin p{
+    color: #686875 ;
+   
+        line-height: 24px;
+        margin-bottom: 33px ;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #e5e4ed;
+    }
+
+    #contact .getin h3{
+        color: #2c234d ;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 26px;
+            margin-bottom: 15px ;
+        }
+
+        #contact .getin .getin-details div{
+            display: flex;
+
+        }
+
+        #contact .getin .getin-details div .get{
+            font-size: 16px;
+            line-height: 22px;
+            margin-right: 20px;
+            color: #5838fc;
+        }
+
+        #contact .getin .getin-details div p{
+            font-size: 14px;
+           
+            line-height: 22px;
+            margin-bottom: 15px;
+
+        }
+
+        
+
+       #contact .form{
+        width: 60%;
+        background-color: #f7f6fa;
+        padding: 40px;
+        border-radius: 10px;
+       }
+
+       #contact .form h4{
+        font-size: 24px;
+        color: #2c234d ;
+        line-height: 30px;
+        margin-bottom: 8px;
+       }
+
+
+       #contact .form p{
+        color: #686875 ;
+       
+            line-height: 24px;
+           
+            padding-bottom: 25px;
+            
+        }
+
+        #contact .form .form-row{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+        }
+
+        #contact .form .form-row input{
+            width: 48%;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 3px;
+            border: none;
+            background: white;
+            color: #7e7c87;
+            outline: none;
+            padding: 20px 30px ;
+            margin-bottom: 20px;
+        }
+
+
+        #contact .form .form-col input,
+        #contact .form .form-col textarea{
+            width: 100%;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 3px;
+            border: none;
+            background: white;
+            color: #7e7c87;
+            outline: none;
+            padding: 20px 30px ;
+            margin-bottom: 20px;
+        }
+
+        #contact .form button{
+            font-size: .9rem;
+            padding: 13px 25px;
+            background: rgb(21, 21, 100);
+            border-radius: 5px;
+            outline: none ;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            color: white;
+        }
+
+      
+        footer{
+            padding: 1vw;
+            background-color: #101C32;
+        }
+
+   footer .map iframe{
+         width: 100%;
+         height: 100%;
+   }
