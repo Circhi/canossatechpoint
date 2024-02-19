@@ -4,7 +4,15 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="paga.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    </head>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+
+
 <title>Canossa Tech Point</title>
 
 
@@ -14,15 +22,17 @@
 <img src="img/mesi.jpg" alt="logo">
 <div class="navigation">
     <ul>
+        <i id="menu-close" class="fas fa-times"></i>
         <li><a href="#home">Home</a></li>
         <li><a href="#features">Servizi</a></li>
         <li><a href="#chi">Chi</a></li>
         <li><a href="#contact">Contatti</a></li>
-        <li><a href="#map">Dove Siamo</a></li>
+        <li><a href="#map">Sede</a></li>
         <li><a href="o/coming soon/coming-soon-template.html">Shop</a></li>
-        
-
     </ul>
+
+<img id="menu-btn" src="img/menu.png" alt="menu" class="menu-icon" onclick="menuToggle()">
+
 </div>
 </nav>
 
@@ -60,7 +70,7 @@
 
         
         <div class="fea-box">
-            <i class="fas fa-tools"></i>
+           
             <i class="fas fa-mobile"></i>
             <h3>TELEFONIA</h3>
             <P>
@@ -157,31 +167,6 @@
 
 
 
- <!---------------CONTACT-
-
-
-<div class="contact-container">
-    <form action="" class="contact-left">
-        <div class="contact-left-title">
-            <h2>Contattatemi</h2>
-            <hr>
-        </div>
-
-        <input type="text" name="" placeholder="Nome e Cognome" class="contact-inputs" required>
-        <input type="text" email="" placeholder="La Vostra Email" class="contact-inputs" required>
-        <textarea name="" placeholder="Richiesta o appuntamento" class="contact-inputs" required></textarea>
-        <button type="submit"> Invia il messaggio <img src="assets/arrow_icon.png">   </button>
-    </form>
-<div class="contact-right">
-    <img src="assets/right_img.png" alt="">
-</div>
-</div>
-   
-
-
-
-
---------------------------------->
 
 
 
@@ -269,9 +254,25 @@
 
 <section id="map">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2841.1773476046783!2d10.407432976695073!3d44.5933979911162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4780092e426367b9%3A0xe39ae8c964bbfe51!2sVia%20dei%20Martiri%2C%2042026%20Canossa%20RE!5e0!3m2!1sit!2sit!4v1706832187533!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
 
 
 
 
+
+
+<script>
+     $('#menu-btn').click(function(){
+        $('nav .navigation ul').addClass('active')
+    });
+
+
+    $('#menu-close').click(function(){
+        $('nav .navigation ul').removeClass('active')
+    });
+</script>
+
+
+</body>
 
 </html>
