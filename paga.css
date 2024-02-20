@@ -525,7 +525,7 @@ padding: 8vw 4vw;
     }
 
 
-#cform .form-row{
+#contact .form .form-row{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -533,7 +533,7 @@ padding: 8vw 4vw;
 }
 
 
-#cform .form-row input{
+#contact .form .form-row input{
     width: 100%;
 }
 }
